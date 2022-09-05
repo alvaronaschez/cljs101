@@ -5,4 +5,5 @@ watch:
 	./scripts/watch
 
 process-cities:
-	./scripts/process_cities
+	@./scripts/process_cities
+	

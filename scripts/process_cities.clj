@@ -27,6 +27,6 @@
 (defn process-cities []
   (let [cities (read-json "/home/alvaro/workspace/clojurescript-project/geonames-all-cities-with-a-population-1000.json")
         cities (filter #(> (get (get % :fields) :population) 100000) cities)]
-    (println cities)))
+    (println (generate-string cities))))
 
 (process-cities)
